@@ -48,7 +48,7 @@ bool LifeSpanHandler::OnBeforePopup(CefRefPtr<CefBrowser> browser,
                   jtargetUrl.get(), jtargetFrameName.get());
 
   if (jreturn == JNI_FALSE && browser->GetHost()->IsWindowRenderingDisabled()) {
-    windowInfo.SetAsWindowless(browser->GetHost()->GetWindowHandle());
+    windowInfo.SetAsWindowless(0);
   }
 
   return (jreturn != JNI_FALSE);
