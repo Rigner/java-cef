@@ -20,9 +20,9 @@ set DISTRIB_DOCS_PATH="%DISTRIB_PATH%\docs"
 set DISTRIB_LIB_PATH="%DISTRIB_PATH%\bin\lib\%1"
 set OUT_PATH=".\out\%1"
 
-set OUT_BINARY_PATH=".\jcef_build\native\Release"
+set OUT_BINARY_PATH=".\jcef_build\native\Debug"
 if not exist %OUT_BINARY_PATH% (
-echo ERROR: Native Release build output path does not exist
+echo ERROR: Native Debug build output path does not exist
 goto end
 )
 
